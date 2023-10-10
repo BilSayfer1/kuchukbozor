@@ -1,82 +1,86 @@
-let products = [
-    {   
-        name: "milk",
-        type: "milk",
-        price: 16000
-    },
-    {   
-        name: "cheese",
-        type: "milk",
-        price: 25999
-    },
-    {   
-        name: "tvorog",
-        type: "milk",
-        price: 12000
-    },
-    {   
-        name: "govyadina",
-        type: "meat",
-        price: 90000
-    },
-    {   
-        name: "baranina",
-        type: "meat",
-        price: 94000
-    },
-    {   
-        name: "kuryatina",
-        type: "meat",
-        price: 45000
-    },
-    {   
-        name: "vodka",
-        type: "alcohol",
-        price: 20000
-    },
-    {   
-        name: "tekila",
-        type: "alcohol",
-        price: 50000
-    },
-    {   
-        name: "pivo",
-        type: "alcohol",
-        price: 17000
-    },
-    {   
-        name: "champain",
-        type: "alcohol",
-        price: 100000
-    },
-]
-
-
-let total = products.reduce((a,b) => {
-    return a + b.price
-},
-0 )
-console.log(total);
-
-function prices(products, type) {
-    let totalPrice = 0;
-    for (const product of products) {
-    if (product.type === type) {
-    totalPrice += product.price;
-    }
-    }
-    return totalPrice;
-    }
-    console.log(prices(products, `milk`));
-    console.log(prices(products, `meat`)); 
-
-    let totals = products.reduce((a,b) => {
-        return a + b.price
-    },
-    0 )
-    console.log(totals / products.length);
-    
-
+  // Отфильтровать задачи в переменные а и b
+    // Сохранить количество в ключе count
+    // Сохранить сами задачи в массиве-ключе arr
+    let arr = [
+        {
+            "userId": 1,
+            "id": 1,
+            "title": "delectus aut au`tem",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 2,
+            "title": "quis ut nam facilis et officia qui",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 3,
+            "title": "fugiat veniam minus",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 4,
+            "title": "et porro tempora",
+  
+            "completed": true
+        },
+        {
+            "userId": 1,
+            "id": 5,
+            "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 6,
+            "title": "qui ullam ratione quibusdam voluptatem quia omnis",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 7,
+            "title": "illo expedita consequatur quia in",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 8,
+            "title": "quo adipisci enim quam ut ab",
+            "completed": true
+        },
+        {
+            "userId": 1,
    
+            "id": 9,
+            "title": "molestiae perspiciatis ipsa",
+            "completed": false
+        },
+        {
+            "userId": 1,
+            "id": 10,
+            "title": "illo est ratione doloremque quia maiores aut",
+            "completed": true
+        },
+    ]
+    let a = {
+        count: 0,
+        arr: []
+    }
+   
+    let b = {
+        count: 0,
+        arr: []
+    }
 
 
+    for(let item of arr) {
+    console.log(item);
+    }
+
+    // for(let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i]);
+    // }
+    
